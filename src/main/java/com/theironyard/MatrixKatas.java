@@ -30,5 +30,17 @@ public class MatrixKatas {
      * @param b The size of the "inner" arrays of ints.
      * @return A two dimensional array of integers where the value is the product of the array indexes
      */
+
     // todo: create createProductTable() method
+public static int[][] createProductTable(int a, int b){
+    int[][] array = new int[a][b];
+
+    for(int x = 0; x < a; x++){
+
+        for(int y = 0; y < b; y++){
+            array[x][y] = x*y;
+        }
+    }
+    return array;
+}
 }
